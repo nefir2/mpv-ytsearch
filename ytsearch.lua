@@ -26,7 +26,7 @@ mp.add_hook("on_load", 50, function()
 			string.format("https://youtu.be/%s", ytvid_id.stdout),
 			"append"
 		);
-	else mp.osd_message("video isn't found.");
+	else mp.osd_message("the video '" .. query .. "' isn't found.");
 	end
 
 	return;
