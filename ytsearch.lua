@@ -17,7 +17,6 @@ mp.add_hook("on_load", 50, function()
 		capture_stdout = true,
 		args = { "yt-dlp", url, "--get-id", "--quiet", "--no-warnings" }
 	});
-	
 
 	--mp.log
 	if (ytvid_id.status == 0 and ytvid_id.stdout ~= "") then
